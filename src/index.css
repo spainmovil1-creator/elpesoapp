@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  .dark {
+    /* 
+      Using exact HEX colors to avoid CSS variable cyclic references.
+      Mapped for optimal contrast in dark mode.
+    */
+    --color-white: #291D13;            /* Base dark bg (brown-950) */
+    
+    /* Neutral inversion with better contrast */
+    --color-neutral-50:  #291D13;
+    --color-neutral-100: #463426;
+    --color-neutral-200: #544131;
+    --color-neutral-300: #B7A690;
+    --color-neutral-400: #D0C3B1;
+    --color-neutral-500: #E4DCCF;
+    --color-neutral-600: #F3EEE3;
+    --color-neutral-700: #FCFBF8;
+    --color-neutral-800: #ffffff;      
+    --color-neutral-900: #ffffff;
+    --color-neutral-950: #ffffff;
+    
+    /* Slate inversion */
+    --color-slate-50:  #463426;
+    --color-slate-100: #544131;
+    --color-slate-200: #685340;
+    --color-slate-300: #B7A690;
+    --color-slate-400: #D0C3B1;
+    --color-slate-500: #E4DCCF;
+    --color-slate-600: #F3EEE3;
+    --color-slate-700: #FCFBF8;
+    --color-slate-800: #ffffff;        
+    --color-slate-900: #ffffff;
+    --color-slate-950: #291D13;
+    
+    /* Indigo (Primary brand color) inverted */
+    --color-indigo-50: #301309;
+    --color-indigo-100: #592917;
+    --color-indigo-200: #6C301A;
+    --color-indigo-300: #883B20;
+    --color-indigo-400: #D4A38C;
+    --color-indigo-500: #C17B5F;
+    --color-indigo-600: #E6C8B9;
+    --color-indigo-700: #F4E5DD;
+    --color-indigo-800: #FBF4F1;
+    --color-indigo-900: #ffffff;
+    --color-indigo-950: #ffffff;       
+    
+    /* Emerald inversions */
+    --color-emerald-50: #022c22;
+    --color-emerald-100: #064e3b;
+    --color-emerald-400: #34d399;
+    --color-emerald-600: #6ee7b7;
+    --color-emerald-700: #a7f3d0;
+    --color-emerald-900: #ecfdf5;
+    
+    /* Rose / Amber / Orange inversions */
+    --color-rose-400: #fb7185;
+    --color-amber-400: #fbbf24;
+    --color-orange-100: #c2410c;
+    --color-orange-200: #ea580c;
+    --color-orange-400: #f97316;
+  }
+}
+
+@theme {
+  --color-neutral-50: #FCFBF8;
+  --color-neutral-100: #F3EEE3;
+  --color-neutral-200: #E4DCCF;
+  --color-neutral-300: #D0C3B1;
+  --color-neutral-400: #B7A690;
+  --color-neutral-500: #9C8973;
+  --color-neutral-600: #816C57;
+  --color-neutral-700: #685340;
+  --color-neutral-800: #544131;
+  --color-neutral-900: #463426;
+  --color-neutral-950: #291D13;
+
+  --color-slate-50: #FCFBF8;
+  --color-slate-100: #F3EEE3;
+  --color-slate-200: #E4DCCF;
+  --color-slate-300: #D0C3B1;
+  --color-slate-400: #B7A690;
+  --color-slate-500: #9C8973;
+  --color-slate-600: #816C57;
+  --color-slate-700: #685340;
+  --color-slate-800: #544131;
+  --color-slate-900: #463426;
+  --color-slate-950: #291D13;
+
+  --color-indigo-50: #FBF4F1;
+  --color-indigo-100: #F4E5DD;
+  --color-indigo-200: #E6C8B9;
+  --color-indigo-300: #D4A38C;
+  --color-indigo-400: #C17B5F;
+  --color-indigo-500: #B35E3F;
+  --color-indigo-600: #A24B2C;
+  --color-indigo-700: #883B20;
+  --color-indigo-800: #6C301A;
+  --color-indigo-900: #592917;
+  --color-indigo-950: #301309;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
