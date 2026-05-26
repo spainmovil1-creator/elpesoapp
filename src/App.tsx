@@ -788,7 +788,7 @@ function TestTab({
         </div>
 
         <a
-          href="https://continuar.elpeso.elenavargas.group/"
+          href="https://landingelpeso.pages.dev/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-indigo-600 text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-indigo-700 hover:-translate-y-1 transition-all mb-16 text-lg"
@@ -812,7 +812,7 @@ function TestTab({
         </div>
 
         <a
-          href="https://continuar.elpeso.elenavargas.group/"
+          href="https://landingelpeso.pages.dev/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-slate-900 text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-slate-800 hover:-translate-y-1 transition-all mb-12"
@@ -1989,6 +1989,12 @@ function AudiosTab() {
       title: "SOS 4: Estoy descansando pero no paro de pensar en la culpa",
       duration: "06:15",
       file: "/audio4.mp3",
+    },
+    {
+      id: 5,
+      title: "SOS 5: Siento que mi mente no apaga el ruido de fondo",
+      duration: "04:45",
+      file: "/audio5.mp3",
     },
   ];
 
