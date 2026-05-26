@@ -788,7 +788,7 @@ function TestTab({
         </div>
 
         <a
-          href="https://landingelpeso.pages.dev/"
+          href="https://continuar.elpeso.elenavargas.group/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-indigo-600 text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-indigo-700 hover:-translate-y-1 transition-all mb-16 text-lg"
@@ -812,7 +812,7 @@ function TestTab({
         </div>
 
         <a
-          href="https://landingelpeso.pages.dev/"
+          href="https://continuar.elpeso.elenavargas.group/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-slate-900 text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-slate-800 hover:-translate-y-1 transition-all mb-12"
