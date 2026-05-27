@@ -47,7 +47,7 @@ type Tab =
   | "checkout";
 
 const UNLOCK_PASSWORD = "cargacero2024";
-const HOTMART_URL = "https://continuar.elpeso.elenavargas.group/";
+const HOTMART_URL = "https://continuar.elpeso.elenavargas.group";
 
 export default function App() {
   const [isUnlocked, setIsUnlocked] = useState(() => {
@@ -788,7 +788,7 @@ function TestTab({
         </div>
 
         <a
-          href="https://landingelpeso.pages.dev/"
+          href={HOTMART_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-indigo-600 text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-indigo-700 hover:-translate-y-1 transition-all mb-16 text-lg"
@@ -812,7 +812,7 @@ function TestTab({
         </div>
 
         <a
-          href="https://landingelpeso.pages.dev/"
+          href={HOTMART_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-slate-900 text-white font-bold py-4 px-10 rounded-full shadow-xl hover:bg-slate-800 hover:-translate-y-1 transition-all mb-12"
@@ -965,9 +965,14 @@ function TestTab({
             onClick={() => {
               setIsTestComplete(true);
               setTimeout(() => {
-                const mainContainer = document.getElementById("main-scroll-container");
-                if (mainContainer) mainContainer.scrollTo({ top: 0, behavior: "auto" });
-                else window.scrollTo(0, 0);
+                const resultsWidget = document.getElementById("results-widget");
+                if (resultsWidget) {
+                  resultsWidget.scrollIntoView({ behavior: "smooth", block: "start" });
+                } else {
+                  const mainContainer = document.getElementById("main-scroll-container");
+                  if (mainContainer) mainContainer.scrollTo({ top: 0, behavior: "auto" });
+                  else window.scrollTo(0, 0);
+                }
               }, 10);
             }}
             className="bg-indigo-600 text-white font-bold py-4 px-12 rounded-full shadow-xl hover:shadow-2xl hover:bg-indigo-700 hover:-translate-y-1 transition-all disabled:bg-slate-200 disabled:text-slate-400 disabled:shadow-none disabled:transform-none disabled:cursor-not-allowed"
@@ -981,7 +986,7 @@ function TestTab({
 
       {/* Results Widget */}
       {isTestComplete && (
-        <div className="bg-indigo-900 rounded-[2.5rem] p-8 md:p-12 text-center overflow-hidden shadow-2xl mt-16 max-w-xl mx-auto mb-20 animate-fade-in relative border border-indigo-800/50">
+        <div id="results-widget" className="bg-indigo-900 rounded-[2.5rem] p-8 md:p-12 text-center overflow-hidden shadow-2xl mt-16 max-w-xl mx-auto mb-20 animate-fade-in relative border border-indigo-800/50">
           <div className="absolute top-[-20%] right-[-10%] w-[300px] h-[300px] bg-indigo-500/20 rounded-full blur-[80px] pointer-events-none"></div>
 
           <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-8 leading-tight">
