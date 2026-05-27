@@ -47,7 +47,7 @@ type Tab =
   | "checkout";
 
 const UNLOCK_PASSWORD = "cargacero2024";
-const HOTMART_URL = "https://landingelpeso.pages.dev/";
+const HOTMART_URL = "https://continuar.elpeso.elenavargas.group/";
 
 export default function App() {
   const [isUnlocked, setIsUnlocked] = useState(() => {
